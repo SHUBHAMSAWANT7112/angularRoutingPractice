@@ -7,6 +7,10 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ProductComponent } from './components/product/product.component';
+import { UsersModule } from './components/users/users.module';
+import { AdminRoutingModule } from './components/admin/admin-routing.module';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     HomeComponent,
     AboutComponent,
     BlogsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ProductComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsersModule,
+    AdminRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
